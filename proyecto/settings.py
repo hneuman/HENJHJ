@@ -102,5 +102,7 @@ USE_TZ = True
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'pagina_app/static/')
 STATIC_URL = '/static/'
+
+print STATIC_ROOT
