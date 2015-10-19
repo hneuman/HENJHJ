@@ -1,0 +1,390 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+	<style type ="text/css">
+	body {
+
+		max-width: 100%;
+		max-height: 100%;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		height: 1000px;
+		box-shadow: 0px 5px 10px rgba(0,0,0.1);
+
+	
+
+	}
+
+	footer {
+		max-width: 100%;
+		max-height: 100%;
+		height: 100px;
+		background-color: green;
+	}
+
+	header {
+		max-width: 100%;
+		max-height: 100%;
+		width: 100%;
+		height: 240px;
+	}
+
+	#contenedor{
+		
+		text-align: center;
+		max-width: 70%;
+		margin-left: 15%;
+		height: 600px;
+		background-color: blue;
+		}
+
+
+	p{	
+		text-align: justify;
+		font-family: : sans-serif;
+		font-size: 12px;
+		color: rgb(100,100,100);
+	}
+	h1,h2,h3,h4{
+		margin: 0px;
+		padding: 0px;
+		color: rgb(50,50,50);
+		font-family: serif;
+	}
+	article p{
+		padding-left: 20px;
+	}
+	article{
+		border-bottom: 1px dashed grey;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding: 20px;
+	}
+	h1{
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	h2{
+		font-size: 18px;
+		text-decoration: underline;
+	}
+	#articulo{
+		width: 55%;
+		background: rgb(240, 240, 240);;
+		padding: 20px;
+		padding-left: 30px;
+		position: relative;
+		float: left;
+
+	}
+	
+	#form_form{
+		width: 30%;
+		height: 30%;
+		position: relative;
+		left: 0%;
+
+
+	}
+
+	aside{
+		width: 35%;
+		float: right;
+		background: rgb(137, 35, 27);
+		padding: 20px;
+		max-width: 30%;
+	}
+
+	section{
+	text-align: left;
+	max-width: 100%;
+
+	background: rgba(198,242,219,1);
+	background: -moz-linear-gradient(-45deg, rgba(198,242,219,1) 10%, rgba(198,242,219,1) 11%, rgba(103,125,191,1) 37%, rgba(93,147,158,1) 47%, rgba(76,181,104,1) 63%, rgba(229,178,232,1) 88%, rgba(229,178,232,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(10%, rgba(198,242,219,1)), color-stop(11%, rgba(198,242,219,1)), color-stop(37%, rgba(103,125,191,1)), color-stop(47%, rgba(93,147,158,1)), color-stop(63%, rgba(76,181,104,1)), color-stop(88%, rgba(229,178,232,1)), color-stop(100%, rgba(229,178,232,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(198,242,219,1) 10%, rgba(198,242,219,1) 11%, rgba(103,125,191,1) 37%, rgba(93,147,158,1) 47%, rgba(76,181,104,1) 63%, rgba(229,178,232,1) 88%, rgba(229,178,232,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(198,242,219,1) 10%, rgba(198,242,219,1) 11%, rgba(103,125,191,1) 37%, rgba(93,147,158,1) 47%, rgba(76,181,104,1) 63%, rgba(229,178,232,1) 88%, rgba(229,178,232,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(198,242,219,1) 10%, rgba(198,242,219,1) 11%, rgba(103,125,191,1) 37%, rgba(93,147,158,1) 47%, rgba(76,181,104,1) 63%, rgba(229,178,232,1) 88%, rgba(229,178,232,1) 100%);
+	background: linear-gradient(135deg, rgba(198,242,219,1) 10%, rgba(198,242,219,1) 11%, rgba(103,125,191,1) 37%, rgba(93,147,158,1) 47%, rgba(76,181,104,1) 63%, rgba(229,178,232,1) 88%, rgba(229,178,232,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6f2db', endColorstr='#e5b2e8', GradientType=1 );
+	
+
+
+	}
+	#botones{
+		text-align: center;
+		max-width: 100%;
+
+	}
+
+
+	.img_botones{
+
+		max-width: 30%;
+	}
+	.imagen_validar{
+		max-width: 10%;
+		margin-left: 10%;
+
+
+	}
+	.boton_olvido_clave{
+	text-align: right;
+
+	}
+
+	.Header-flash{
+		max-width: 100%;
+		max-height: 400px;
+		margin-top: 0;
+
+	}
+	.tabla_ingresasr{
+
+			text-align: center;
+
+	}
+
+	#todo_todo{
+
+		text-align: center;
+		max-width: 70%;
+		margin-left: 15%;
+
+	}
+
+	.caja_login {
+		width: 70%;
+		background: url('{% static "static/img/fondo_login.jpg" %}') top left no-repeat #5c5c5c;
+		border: 1px solid #333;
+		border-radius: 5px;
+		padding-left: 10%;
+	}
+
+	.Header-flash{
+		max-width: 100%;
+		height: auto%;
+		min-width: 100%;
+	}
+
+	#id_username[type="text"] {
+	     width: 200%; 
+	     box-sizing: border-box;
+	     -webkit-box-sizing:border-box;
+	     -moz-box-sizing: border-box;
+	}
+
+
+	#id_password[type="password"] {
+		     width: 200%; 
+		     box-sizing: border-box;
+		     -webkit-box-sizing:border-box;
+		     -moz-box-sizing: border-box;
+		}
+
+
+
+	#imagen_login{
+		left: 0;
+	}
+
+	#p_h{
+		vertical-align: middle;
+		text-align: left;
+		height: 100%;
+		font-size: 200px;
+		font-family: verdana;
+		margin: 0px;
+		color: black;
+		text-shadow: 1px 0px 20px rgb(255, 255, 255);
+	}
+
+	#p_n{
+		vertical-align: middle;
+		text-align: right;
+		height: 100%;
+		font-size: 200px;
+		font-family: verdana;
+		margin: 0px;
+		color: black;
+		text-shadow: 1px 0px 20px rgb(255, 255, 255);
+	}
+
+		#p_y{
+		vertical-align: middle;
+		text-align: center;
+		height: 100%;
+		font-size: 200px;
+		font-family: verdana;
+		margin: 0px;
+		color: black;
+		text-shadow: 1px 0px 20px rgb(255, 255, 255);
+	}
+
+	#p_h:hover, #p_n:hover{
+
+			-webkit-animation: girar 5s 1;  /* Chrome, Safari, Opera */
+			animation: girar 5s 1;
+	}
+
+	#div_h{
+
+			
+			-webkit-animation: girar 5s 1;  /* Chrome, Safari, Opera */
+			animation: girar 5s 1;
+
+			
+	}
+
+	#div_n{
+
+
+			-webkit-animation: girar 5s 1;  /* Chrome, Safari, Opera */
+			animation: girar 5s 1;
+
+		    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+		    animation-delay: 5s;
+			
+	}
+
+
+
+
+
+/* Chrome, Safari, Opera */
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes girar {
+	0%{ transform:  rotate(0deg); -webkit-transition: opacity 0.8s linear; opacity: 1;}
+	100%{ transform:  rotate(360deg); -webkit-transition: opacity 0.8s linear; opacity: 0; }
+
+}
+
+@keyframes girar {
+
+	0%{ transform:  rotate(0deg); -webkit-transition: opacity 0.8s linear; opacity: 1;}
+	100%{ transform:  rotate(360deg); -webkit-transition: opacity 0.8s linear; opacity: 0; }
+
+	/*50%{ transform:  rotate(180deg); -webkit-transition: opacity 0.8s linear; opacity: 0; }
+	100%{ transform:  rotate(360deg); -webkit-transition: opacity 0.8s linear; opacity: 1; }
+*/
+
+
+}
+
+
+
+
+	</style>
+
+	<script type="text/javascript">
+
+	function actualizar(id_usuario,Meses,Anno){
+
+		var anno = 	document.getElementById("Anno").value;
+		var meses = 	document.getElementById("Meses").value;
+
+		console.log(">>>" + anno + "<<<")
+
+
+		document.getElementById("botonMod_contenido").innerHTML =" Generar Recibo " + meses + "/" + anno ;
+		
+		document.getElementById("botonMod").action = "/enviar_solicitud_recibo/"+id_usuario+"/"+meses+"/"+anno;
+
+		document.getElementById("botonMod_contenido").disabled=false;
+
+		var texto = "<button type=\"button\" id=\"botonMod\" onclick=\"actualizar(Meses,Anno);\" , value=\"Recibo_wtf\" > "+ "Generar Recibo" + meses + "/" + anno + "</button>";
+
+		console.log(texto);
+
+		}
+
+	function verificar_clave(password,password_re){
+		console.log(password.value);
+		console.log(password_re.value);
+
+		
+		if(password.value == password_re.value){
+			alert("Su usuario ha sido Activado Satisfactoriamente");
+		ok = true;
+		}
+		else{
+			alert("Las Contraseñas No Coinciden");
+		ok = false;
+
+		}
+		
+		return ok;
+	}
+
+	function cerrar_ventana(){
+		console.log("cerrarrrr_ventanaaa")
+		aler("cerrar_vetanana");
+
+		return true;
+
+	}
+
+	</script>
+
+	<title>Te Amo HerYeLiTo</title>
+   	<link rel="icon" type="image/gif" href='{% static "img/icono/dianita.png" %}' />
+
+	</head>
+	<body>
+		<div id="contenedor">
+				<header>
+				
+					<div class="Header-flash">
+						
+
+				   
+				    </div>
+
+				</header>
+				
+
+				<section>
+
+				<div id="div_h"> 
+
+					<p id="p_h"> Sr "H" </p> 
+
+				</div>
+
+				<div id="div_y"> 
+
+					<p id="p_y"> Y </p> 
+
+				</div>
+
+
+				<div id="div_n"> 
+
+					<p id="p_n"> Sra "N" </p> 
+
+				</div>
+
+
+
+
+			
+				</section>
+						
+
+
+
+
+
+
+
+		</div>	
+
+	
+	</body>
+</html>
