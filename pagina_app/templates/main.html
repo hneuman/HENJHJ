@@ -11,13 +11,11 @@
 		margin-right: 10px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		height: 1000px;
-		box-shadow: 0px 5px 10px rgba(0,0,0.3);
+		height: 900px;
 		/*background-image:  url("{% static 'img/fondo.jpg'%}");*/
-		background-image:  url("{% static 'img/Fondo.jpeg' %}");
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
+
 		background-color: rgb(3, 39, 243);	
+
 
 	}
 
@@ -38,10 +36,19 @@
 	#contenedor{
 		
 		text-align: center;
-		max-width: 90%;
+		max-width: 100%;
 		/*margin-left: 15%;*/
 		margin: auto;
-		height: 800px;
+		height: 900px;
+		width: 100%;
+		background-image:  url("{% static 'img/fondoHN2.png' %}");
+		background-size:   cover;                      /* <------ */
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		text-align: center;
+		overflow: hidden;
+
+
 		}
 
 
@@ -117,6 +124,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6f2db', endColorstr='#e5b2e8', GradientType=1 );
 	
 */
+
 
 	}
 	#botones{
@@ -199,17 +207,18 @@
 	#div_h{
 		vertical-align: middle;
 		text-align: left;
-		font-size: 200px;
+		font-size: 50px;
 		font-family: verdana;
 		margin: 0px;
 		color: black;
 		text-shadow: 1px 0px 20px rgb(255, 255, 255);
 		padding: 0px;
+	
 	}
 
 	#div_n{
 		vertical-align: middle;
-		text-align: right;
+		text-align: left;
 		font-size: 200px;
 		font-family: verdana;
 		margin: 0px;
@@ -221,36 +230,36 @@
 
 	#p_y{
 		vertical-align: middle;
-		text-align: center;
+		text-align: left;
 		height: 100%;
-		font-size: 200px;
+		font-size: 50px;
 		font-family: verdana;
-		margin: 0px;
 		color: black;
 		text-shadow: 1px 0px 20px rgb(255, 255, 255);
+		margin-left: 15%;
+
 	}
 
 	#p_h{
 		vertical-align: middle;
 		text-align: left;
 		height: 100%;
-		font-size: 200px;
+		font-size: 50px;
 		font-family: verdana;
-		margin: 0px;
 		color: black;
 		text-shadow: 1px 0px 20px rgb(255, 255, 255);
 		margin-left: 10%;
 	}
 	#p_n{
 		vertical-align: middle;
-		text-align: right;
+		text-align: left;
 		height: 100%;
-		font-size: 200px;
+		font-size: 50px;
 		font-family: verdana;
-		margin: 0px;
 		color: black;
 		text-shadow: 1px 0px 20px rgb(255, 255, 255);
-		margin-right: 10%;
+		margin-left: 10%;
+
 	}
 
 /*
@@ -398,7 +407,7 @@
 
 				<div id="div_h"> 
 
-					<p id="p_h"> Sr </p> 
+					<p id="p_h"> Sr "H" </p> 
 
 				</div>
 
@@ -411,7 +420,7 @@
 
 				<div id="div_n"> 
 
-					<p id="p_n"> Sr </p> 
+					<p id="p_n"> Sra "N" </p> 
 
 				</div>
 
